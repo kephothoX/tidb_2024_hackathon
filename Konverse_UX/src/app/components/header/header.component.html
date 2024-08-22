@@ -1,0 +1,43 @@
+<nav class="mat-elevation-z8 mb-1">
+  <mat-toolbar class="mat-elevation-z6">
+    <mat-toolbar-row  color="primary" class="bg-whiter"  style="justify-content: flex-end !important;">
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="bg-whiter text-primary" id="apps">
+        <mat-icon class="material-symbols-outlined">apps</mat-icon>
+      </button>
+       <h2 class="pr-2 text-ks">Konverse</h2>
+      <mat-menu #menu="matMenu">
+        <a routerLink="/home">
+          <button mat-menu-item>
+            <mat-icon class="material-symbols-outlined">home</mat-icon>
+            <h3 class="text-primary">Konverse</h3>
+            <small>Bids Hub</small>
+          </button>
+        </a>
+        <mat-divider></mat-divider>
+
+        
+        <mat-divider></mat-divider>
+
+        <h4 class="pr-3" *ngIf="accountEmail">Logged in as: <span class="text-warn">{{ accountEmail }}</span></h4>
+        <h4 class="pr-3" *ngIf="!accountEmail">Not Logged in. <a routerLink="/personal/auth/signin">Login to
+            Continue</a></h4>
+
+        <mat-divider></mat-divider>
+      </mat-menu>       
+
+      <div>
+        
+        
+      </div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row color="accent" class="mat-elevation-z4 text-white display-flex mb-2 bg-accent" style="justify-content: flex-end !important;">
+      <div>
+        <a routerLink="/bids" class="text-white">
+          <span class="p-1 m-1">Bids </span>
+        </a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</nav>
+

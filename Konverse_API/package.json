@@ -1,0 +1,24 @@
+{
+  "name": "Konverse",
+  "version": "1.0.0",
+  "description": "Konverse API",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/kephotho"
+  },
+  "keywords": [
+    "Kephotho"
+  ],
+  "author": "Kephotho Solutions",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "@vercel/node": "",
+    "typescript": "5.5.3"
+
+
+  }
+}
