@@ -1,6 +1,6 @@
 # Konverse
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+This project was generated with [https://github.com/angular/angular-cli](Angular CLI) version 13.2.5.
 
 ## Development  server
 
@@ -28,9 +28,13 @@ To get more help on the Angular CLI use `cd ./Konverse_UX && ng help` or go chec
 
 ## Start Flask Server
 
-Initalize convex by running `cd ./Konverse_API && pip install -r requirements.txt ` replace `./Konverse_API/.env` with values from your values.
+Initalize Flask server by running `cd ./Konverse_API && pip install -r requirements.txt ` replace `./Konverse_API/.env` with values from your values.
 Follow [Flask development docs](https://flask.palletsprojects.com/) for configuration and further help.
 
 ## Authorization && Authentication
 
 Replace `./Konverse_UX/src/environments` values with your own as they are subject to change.
+
+
+## Live Site
+[https://konverse-xi.vercel.app](konverse)
