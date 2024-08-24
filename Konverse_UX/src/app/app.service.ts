@@ -35,8 +35,32 @@ export class AppService {
     response: 'json'
   }
 
+   httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+    }),
+    response: 'json'
+  }
+
+
 
   APIEndpoint = environment.APIEndpoint;
+
+
+
+  uploadFile(data: any): Observable<any> {
+    return this._httpClient.post(`${this.APIEndpoint}/embeddings/new`, data).pipe(catchError(this._errorService.handleError));
+  };
+
+
+  prompt(data: any): Observable<any> {
+    return this._httpClient.post(`${this.APIEndpoint}/embeddings`, data).pipe(catchError(this._errorService.handleError));
+  };
+
+
+  summarize(data: any): Observable<any> {
+    return this._httpClient.post(`${this.APIEndpoint}/summarize`, data).pipe(catchError(this._errorService.handleError));
+  };
 
 
 

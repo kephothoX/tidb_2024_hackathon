@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthnComponent } from './authn.component';
+import { AuthnComponent  } from './authn.component';
 
 const routes: Routes = [
-  { path: '', component: AuthnComponent }
+  { path: '', component: AuthnComponent },
+
   
 ];
 

@@ -1,4 +1,4 @@
-# Thrive
+# Konverse
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
@@ -26,10 +26,10 @@ Run `cd ./Konverse_UX && ng e2e` to execute the end-to-end tests via a platform 
 
 To get more help on the Angular CLI use `cd ./Konverse_UX && ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Start Convex
+## Start Flask Server
 
-Initalize convex by running `cd ./Konverse_API && npm install && npx convex dev` replace `./Konverse_API/.env.local` with values from your convex project.
-Follow [Convex development docs](https://docs.convex.dev/home) for configuration and further help.
+Initalize convex by running `cd ./Konverse_API && pip install -r requirements.txt ` replace `./Konverse_API/.env` with values from your values.
+Follow [Flask development docs](https://flask.palletsprojects.com/) for configuration and further help.
 
 ## Authorization && Authentication
 

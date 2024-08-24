@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { provideAuth0 } from '@auth0/auth0-angular';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -13,7 +14,8 @@ import { environment as environ } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
-    AuthnComponent
+    AuthnComponent,
+
   ],
   imports: [
     CommonModule,
@@ -22,11 +24,15 @@ import { environment as environ } from 'src/environments/environment';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-
-    
   ],
   providers: [
-    
+    provideAuth0({
+      domain: 'kephothosolutions.us.auth0.com',
+      clientId: '*****************',
+      authorizationParams: {
+        redirect_uri: 'https://konverse-xi.vercel.app/home'
+      }
+    }),
   ],
 
 })

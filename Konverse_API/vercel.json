@@ -1,0 +1,15 @@
+{
+    "functions":
+    {
+        "api/app.py":
+        {
+            "memory": 3009,
+            "maxDuration": 60
+        },
+        "api/config.py":
+        {
+            "memory": 1024,
+            "maxDuration": 30
+        }
+    }
+}

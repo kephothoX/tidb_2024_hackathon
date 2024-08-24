@@ -21,27 +21,6 @@
   <app-root></app-root>
 
 
-  <script type="module">
-
-    import  TopicMessageQuery  from "/node_modules/@hashgraph/sdk/src/topic/TopicMessageQuery.js"
-
-    window.onload = async() => {
-      alert('Jump!');
-
-
-      await new TopicMessageQuery()
-            .setTopicId(window.localStorage.getItem('topicID'))
-            .setStartTime(0)
-            .subscribe(
-                client,
-                null,
-                (message) => alert(Buffer.from(`${message?.contents}`, "utf8").toString())
-            );
-    };
-  
-      
-
-  </script>
 
 </body>
 </html>

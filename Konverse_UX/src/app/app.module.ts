@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { provideHttpClient } from '@angular/common/http';
 
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -43,10 +44,11 @@ import { ProfileDirective } from './directives/profile.directive';
     MatDividerModule,
     MatSnackBarModule,
     MatCardModule,
-       
+             
   ],
   providers: [
-    provideHttpClient()
+    provideHttpClient(),
+    
   ],
   bootstrap: [AppComponent]
 })

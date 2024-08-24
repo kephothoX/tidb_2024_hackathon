@@ -1,8 +1,7 @@
 {
-  "/api/*": {
-    "target": "https://fabulous-hornet-327.convex.site",
-    "secure": true,
-    "changeOrigin": true,
-    "logLevel": "debug"
-  }
+    "/api/*":
+    {
+        "target": "http://localhost:5000",
+        "secure": false
+    }
 }
