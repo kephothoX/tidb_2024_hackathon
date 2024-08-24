@@ -1,6 +1,6 @@
 # Konverse
 
-This project was generated with [https://github.com/angular/angular-cli](Angular CLI) version 13.2.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
 ## Development  server
 
@@ -37,4 +37,4 @@ Replace `./Konverse_UX/src/environments` values with your own as they are subjec
 
 
 ## Live Site
-[https://konverse-xi.vercel.app](konverse)
+[konverse](https://konverse-xi.vercel.app)
