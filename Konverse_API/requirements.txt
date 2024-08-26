@@ -4,3 +4,8 @@ peewee
 tidb-vector
 pypdf
 flask-cors
+sqlalchemy
+python-dotenv
+pymysql
+flask-restful
+gunicorn
